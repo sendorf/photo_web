@@ -5,8 +5,7 @@ The task is to write a small utility site that will	get	a	vehicle’s	registrati
 
 The URL for an image follows a pattern	
 
-<server>/imageserver/<obfuscated-­‐stock-­‐
-reference>/<size>/<camera>	
+[server]/imageserver/[obfuscated-­‐stock-­‐reference]/[size]/[camera]
   
 Where:
 * obfuscated-­‐stock-­‐reference	is	calculated   using the   rules   below	
