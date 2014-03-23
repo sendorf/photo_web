@@ -1,3 +1,11 @@
-<%= simple_form_for @server do |f| %>
+<%= simple_form_for @engine do |f| %>
+
+<%= f.input :stock_ref, :label_html => { :class => 'col-md-offset-1' }, 
+  						:input_html => {:class => 'col-md-offset-1'}%>
+
+<%= f.input :registration, :label_html => { :class => 'col-md-offset-1' }, 
+  						:input_html => {:class => 'col-md-offset-1'}%>
+
+<%= f.button :submit, :class => 'col-md-offset-1 btn btn-warning' %>
 
 <% end %>
