@@ -1,4 +1,4 @@
-class Photo
+class SearchEngine
 
 	def generate_reference(stock_ref, registration)
 	  reference = ""
