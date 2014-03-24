@@ -1,6 +1,6 @@
 class SearchEngineController < ApplicationController
 
-	def index
+	def new
 		@engine = SearchEngine.new
 	end
 
