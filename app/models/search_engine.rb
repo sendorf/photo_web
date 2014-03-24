@@ -6,16 +6,15 @@ class SearchEngine
 
 	attr_reader :stock_ref, :registration, :reference
 
+	validates_presence_of :stock_ref, :registration
+	validates_length_of :stock_ref, :minimum => 11, :maximum => 20
+
 	def initialize(stock_ref = "", registration = "" )
 		if(stock_ref.size !=0)
 			@stock_ref = stock_ref
-		else
-			@stock_ref = ""
 		end
 		if(registration.size !=0)
 			@registration = registration
-		else
-			@registration = ""
 		end
 	end
 

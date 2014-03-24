@@ -48,9 +48,9 @@ PhotoWeb::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  resources :search_engines, :only => [:new , :create]
+  resources :search_engines, :only => [:new , :create, :index]
 
-   root :to => 'search_engine#new'
+   root :to => 'search_engines#new'
 
   # See how all your routes lay out with "rake routes"
 
