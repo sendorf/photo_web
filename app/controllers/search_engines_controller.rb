@@ -15,7 +15,7 @@ class SearchEnginesController < ApplicationController
 	end
 
 	def index
-		@ref = params[:ref]
+		@candidate_images = SearchEngine.new.generate_candidates(params[:ref])
 	end
 
 end
