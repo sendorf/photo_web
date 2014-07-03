@@ -13,3 +13,7 @@ Where:
 * camera is	one of f, i, r, 4, 5 or 6
 
 The obfuscated stock reference is calculated by interleaving the stock reference with the reversal of the	registration plate and appending	the	9th	character	of the stock reference and taking	the shortest possible	solution (i.e. ignore any unused characters	from the stock reference)	
+
+Runs over Ruby 2.1.1 and Rails 4.1.1
+
+Example running in http://photo-challenge.herokuapp.com/
