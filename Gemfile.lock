@@ -106,6 +106,9 @@ GEM
       polyglot (>= 0.3.1)
     tzinfo (1.2.1)
       thread_safe (~> 0.1)
+    uglifier (2.5.1)
+      execjs (>= 0.3.0)
+      json (>= 1.8.0)
 
 PLATFORMS
   ruby
@@ -119,3 +122,4 @@ DEPENDENCIES
   sass
   simple_form
   therubyracer
+  uglifier

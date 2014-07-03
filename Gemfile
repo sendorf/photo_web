@@ -9,6 +9,7 @@ gem 'execjs'
 gem 'rake'
 gem 'therubyracer'
 gem 'simple_form'
+gem 'uglifier'
 
 
 group :development, :test do
