@@ -17,6 +17,8 @@ group :development, :test do
   gem 'rspec-rails'
 end
 
+gem "sass", :require => 'sass'
+
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password

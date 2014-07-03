@@ -53,4 +53,8 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+resources :search_engines, only: [:new, :index, :create]
+
+root :to => 'search_engines#new'
+
 end
