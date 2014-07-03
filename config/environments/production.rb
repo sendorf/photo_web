@@ -27,9 +27,7 @@ Rails.application.configure do
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.precompile += %w( jQuery.js )
-  config.assets.precompile += %w( rails.js )
-  config.assets.precompile += %w( application.js )
+  config.assets.compile = false
 
   # Generate digests for assets URLs.
   config.assets.digest = true
@@ -71,12 +69,13 @@ Rails.application.configure do
   # the I18n.default_locale when a translation cannot be found).
   config.i18n.fallbacks = true
 
+  # Send deprecation notices to registered listeners.
+  config.active_support.deprecation = :notify
+
   # Disable automatic flushing of the log to improve performance.
   # config.autoflush_log = false
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 
-  # Do not dump schema after migrations.
-  config.active_record.dump_schema_after_migration = false
 end
