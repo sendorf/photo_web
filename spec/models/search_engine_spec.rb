@@ -5,7 +5,7 @@ describe SearchEngine do
   	stock_ref = "ARNFH-U-5728"															# Sample stock reference
   	registration = "SO06DNV"																# Sample registration plate
   	engine = SearchEngine.new(stock_ref, registration)
-  	engine.generate_reference.should eq("AVRNNDF6H0-OUS5") 	# Generates the ofuscated reference for
+  	expect(engine.generate_reference).to eq("AVRNNDF6H0-OUS5") 	# Generates the ofuscated reference for
   end																												# the example
 end
 
@@ -26,6 +26,6 @@ describe SearchEngine do
   											 "http://imagecache.arnoldclark.com/imageserver/AVRNNDF6H0-OUS5/800/f/",
   											 "http://imagecache.arnoldclark.com/imageserver/AVRNNDF6H0-OUS5/800/5/",
   											 "http://imagecache.arnoldclark.com/imageserver/AVRNNDF6H0-OUS5/800/r/"]	
-  	engine.generate_candidates(engine.generate_reference).should eq(candidate_images) 	# Generates the candidates images for
-  end																																										# the example ofuscated reference
+  	expect(engine.generate_candidates(engine.generate_reference)).to eq(candidate_images)   # Generates the candidates images for
+  end																																										    # the example ofuscated reference
 end

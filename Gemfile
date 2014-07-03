@@ -15,9 +15,10 @@ gem 'simple_form'
 
 group :development, :test do
   gem 'rspec-rails'
+  gem "sass", :require => 'sass'
 end
 
-gem "sass", :require => 'sass'
+
 
 gem 'jquery-rails'
 
