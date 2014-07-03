@@ -10,11 +10,11 @@ gem 'rake'
 gem 'therubyracer'
 gem 'simple_form'
 gem 'uglifier'
+gem "sass", :require => 'sass'
 
 
 group :development, :test do
   gem 'rspec-rails'
-  gem "sass", :require => 'sass'
 end
 
 
